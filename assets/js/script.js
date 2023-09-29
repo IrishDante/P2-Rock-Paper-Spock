@@ -17,7 +17,7 @@ function playGame(playerChoice){
 
   if (playerChoice == opponentChoice){
     document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`
-  }eles{
+  }else{
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, as opponent choose ${opponentChoice}`
   }
 }
