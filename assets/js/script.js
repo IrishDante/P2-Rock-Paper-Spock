@@ -1,4 +1,5 @@
 //declare constants for DOM elements
+console.log("javaScript is running");
 const buttons = document.getElementsByClassName("control");
 const playerScore = document.getElementById("player-score");
 const opponentScore = document.getElementById("opponent-score");
