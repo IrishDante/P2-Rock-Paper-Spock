@@ -1,12 +1,13 @@
 //declare constants for DOM elements
-const buttons = document.getElementsByClassName("control");
-const playerScore = document.getElementById("player-score");
-const opponentScore = document.getElementById("opponent-score");
+let buttons = document.getElementsByClassName("control");
+let playerScore = document.getElementById("player-score");
+let opponentScore = document.getElementById("opponent-score");
 const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
 //add event listener to all buttons
 for (let button of buttons){
   button.addEventListener("click", function(){
+    console.log("button has been pressed")
     let playerChoice = this.textContent;
     playGame(playerChoice);
   })
