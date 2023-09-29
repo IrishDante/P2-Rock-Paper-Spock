@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function playGame(playerChoice){
   
-  let opponentChoiceObject = gameChoices[Math.floor(Math.random()*5)].name();
+  let opponentChoice = gameChoices[Math.floor(Math.random()*5)].name;
   console.log(opponentChoice);
 
   if (playerChoice == opponentChoice){
