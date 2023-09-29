@@ -46,11 +46,23 @@ footer{
 }
 
 .player{
+  background-color:lightblue;
   float:left;
   width:45%;
 }
 
 .opponent{
+  background-color:lightcoral;
   float:right;
   width:45%;
+}
+
+#player-image{
+  max-height:50%;
+  max-width:50%;
+}
+
+#opponent-image{
+  max-height:50%;
+  max-width:50%;
 }
