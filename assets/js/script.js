@@ -2,7 +2,9 @@
 let buttons = document.getElementsByClassName("control");
 let playerScore = document.getElementById("player-score");
 let opponentScore = document.getElementById("opponent-score");
-const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"]}, {name:"Paper", beats:["Rock","Spock"]}, 
+                     {name:"Scissors", beats:["Paper","Lizard"]}, {name:"Lizard", beats:["Spock","Paper"]}, 
+                     {name:"Spock", beats:["Scissors","Rock"]};
 
 //check that dom has loaded source https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -25,7 +27,7 @@ function playGame(playerChoice){
 
   if (playerChoice == opponentChoice){
     document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
-  }else{
-    document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, as opponent choose ${opponentChoice}`;
+  }else if (playerChoice == ){
+    document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice}`;
   }
 }
