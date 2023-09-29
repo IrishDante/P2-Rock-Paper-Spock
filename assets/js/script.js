@@ -28,7 +28,19 @@ function playGame(playerChoice){
 
   if (playerChoice == opponentChoice){
     document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
-  }else if (gameChoices.find(opponentChoice).beats.find(playerChoice) == playerChoice){
+  }else if (playerWins(playerChoice, opponentChoice)){
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you win!`;
+  }else{
+    document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you lose!`;
   }
+}
+
+function playerWins(playerChoice, opponentChoice){
+  let wins = gameChoices.find(playerChoice)
+  for(let win of wins){
+    if(opponentChoice == win){
+      return true;
+    }
+  }
+  return false;
 }
