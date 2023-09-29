@@ -1,16 +1,15 @@
 //declare constants for DOM elements
-console.log("javaScript is running");
 const buttons = document.getElementsByClassName("control");
 const playerScore = document.getElementById("player-score");
 const opponentScore = document.getElementById("opponent-score");
 const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+
 //add event listener to all buttons
 for (let button of buttons){
   button.addEventListener("click", function(){
-    let playerChoice = this.getAttribute("data-choice");
-    //playGame(playerChoice);
+    let playerChoice = this.textContent;
+    playGame(playerChoice);
   })
-  console.log("button event listener added);
 }
 
 function playGame(playerChoice){
