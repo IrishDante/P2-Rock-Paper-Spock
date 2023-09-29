@@ -4,14 +4,18 @@ let playerScore = document.getElementById("player-score");
 let opponentScore = document.getElementById("opponent-score");
 const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
+//check that dom has loaded source https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+    for (let button of buttons){
+      button.addEventListener("click", function(){
+        console.log("button has been pressed");
+        let playerChoice = this.textContent;
+        playGame(playerChoice);
+      })
+    }
+});
 //add event listener to all buttons
-for (let button of buttons){
-  button.addEventListener("click", function(){
-    console.log("button has been pressed");
-    let playerChoice = this.textContent;
-    playGame(playerChoice);
-  })
-}
 
 function playGame(playerChoice){
   
