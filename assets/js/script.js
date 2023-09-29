@@ -7,7 +7,7 @@ const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 //add event listener to all buttons
 for (let button of buttons){
   button.addEventListener("click", function(){
-    console.log("button has been pressed")
+    console.log("button has been pressed");
     let playerChoice = this.textContent;
     playGame(playerChoice);
   })
