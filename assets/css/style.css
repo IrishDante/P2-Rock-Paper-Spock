@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 html{
   min-height:100%;
   position:relative;
 }
 
 body{
-  font-family:'',sans-serif;
+  font-family:'Roboto',sans-serif;
   margin:0;
 }
 
@@ -21,4 +23,24 @@ footer{
   box-sizing:border-box;
   height:15%;
   text-align:center;
+}
+
+.game-space{
+  width:80%
+  margin-left:auto;
+  mergin-right:auto;
+  margin-top:1%;
+  text-align:center;
+}
+
+.control{
+  display: inline-block;
+  margin: 1%;
+  width: 10%;
+  height: 10%;
+}
+
+.round-result{
+  text-align: center;
+  height: 10%;
 }
