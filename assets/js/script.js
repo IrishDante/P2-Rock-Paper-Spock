@@ -2,6 +2,7 @@
 let buttons = document.getElementsByClassName("control");
 let playerScore = document.getElementById("player-score");
 let opponentScore = document.getElementById("opponent-score");
+let roundResult = document.getElementById("round-result");
 const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"]}, {name:"Paper", beats:["Rock","Spock"]}, 
                      {name:"Scissors", beats:["Paper","Lizard"]}, {name:"Lizard", beats:["Spock","Paper"]},
                      {name:"Spock", beats:["Scissors","Rock"]}];
@@ -31,12 +32,12 @@ function playGame(playerChoice){
   console.log(opponentChoice);
 
   if (playerChoice == opponentChoice){
-    document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
+    roundResult.innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
   }else if (playerWins(playerChoice, opponentChoice)){
-    document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you win!`;
+    roundResult.innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you win!`;
     playerScore.innerHTML = ++playerWinCount;
   }else{
-    document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you lose!`;
+    roundResult.innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you lose!`;
     opponentScore.innerHTML = ++opponentWinCount;
   }
 }
