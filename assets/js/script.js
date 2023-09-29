@@ -8,7 +8,7 @@ for (let button of buttons){
   button.addEventListener("click", function(){
     let playerChoice = this.getAttribute("data-choice");
     console.log(playerChoice + " has been clicked");
-    playGame(playerChoice);
+    //playGame(playerChoice);
   })
 }
 
