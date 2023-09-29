@@ -36,7 +36,8 @@ function playGame(playerChoice){
 }
 
 function playerWins(playerChoice, opponentChoice){
-  let wins = gameChoices.find(playerChoice)
+  let choiceMatchUps = gameChoices.find(({ name }) => name === playerChoice);
+  let win = choiceMatchUps.beats;
   for(let win of wins){
     if(opponentChoice == win){
       return true;
