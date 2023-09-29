@@ -7,6 +7,7 @@ const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 //check that dom has loaded source https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
+    console.log(buttons);
     for (let button of buttons){
         console.log("button event listener added");
         button.addEventListener("click", function(){
