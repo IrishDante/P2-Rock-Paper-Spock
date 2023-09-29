@@ -34,10 +34,10 @@ function playGame(playerChoice){
     document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
   }else if (playerWins(playerChoice, opponentChoice)){
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you win!`;
-    playerScore.innerHTML = playerWinCount++;
+    playerScore.innerHTML = ++playerWinCount;
   }else{
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you lose!`;
-    opponentScore.innerHTML = opponentWinCount++;
+    opponentScore.innerHTML = ++opponentWinCount;
   }
 }
 
