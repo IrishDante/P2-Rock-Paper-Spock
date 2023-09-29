@@ -21,7 +21,7 @@ footer{
   left:0;
   bottom:0;
   box-sizing:border-box;
-  height:15%;
+  height:25%;
   text-align:center;
 }
 
@@ -40,7 +40,17 @@ footer{
   height: 10%;
 }
 
-.round-result{
+#round-result{
   text-align: center;
   height: 10%;
+}
+
+.player{
+  float:left;
+  width:45%;
+}
+
+.opponent{
+  float:right;
+  width:45%;
 }
