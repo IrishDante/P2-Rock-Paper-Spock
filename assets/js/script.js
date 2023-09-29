@@ -9,6 +9,6 @@ var buttons[
 for(bttn of buttons){
     let button = document.createElement('button');
     button.appendChild(document.createTextNode(bttn.name))
-    document.getElementById('rpslsGame').appendChild(button);
+    document.body.getElementById('rpslsGame').appendChild(button);
     button.addEventListener('click', function() {choice(bttn);});
 }
