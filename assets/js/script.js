@@ -2,7 +2,7 @@
 const buttons = document.getElementsByClassName("control");
 const playerScore = document.getElementById("player-score");
 const opponentScore = document.getElementById("opponent-score");
-
+const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 /*add event listener to all buttons*/
 for(let button of buttons){
   button.addEventListener("click", function(){
@@ -12,5 +12,11 @@ for(let button of buttons){
 
 /*this function compares the player choice and the computer choice to see who wins and updates the scores accordingly*/
 function playGame(playerChoice){
-  
+  let opponentChoice = gameChoices[Math.floor(Math.random()*5)];
+
+  if (playerChoice == opponentChoice){
+    document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`
+  }eles{
+    document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, as opponent choose ${opponentChoice}`
+  }
 }
