@@ -14,11 +14,11 @@
         <section class="game-space">
              <div>
                 <p>Make your choice:</p>
-                <button aria-label="Rock" class="conrtol">Rock</button>
-                <button aria-label="Paper" class="conrtol">Paper</button>
-                <button aria-label="Scissors" class="conrtol">Scissors</button>
-                <button aria-label="Lizard" class="conrtol">Lizard</button>
-                <button aria-label="Spock" class="conrtol">Spock</button>
+                <button aria-label="Rock" data-type="rock" class="conrtol">Rock</button>
+                <button aria-label="Paper" data-type="paper" class="conrtol">Paper</button>
+                <button aria-label="Scissors" data-type="Scissors" class="conrtol">Scissors</button>
+                <button aria-label="Lizard" data-type="Lizard" class="conrtol">Lizard</button>
+                <button aria-label="Spock" data-type="Spock" class="conrtol">Spock</button>
             </div>
             <div id="roundResult"></div>
             <div class="player">
@@ -27,9 +27,17 @@
             </div>
             <div class="opponent">
                 <h3>Your score: <span id="opponent-score">0</span></h3>
+                <!-- include an image here? --> 
             </div>
         </section>
-       
+        <footer>
+            Rock Paper Scissors Lizard Spock rules:
+            Rock: Crushes the Lizard and Dulls the Scissors.
+            Paper: Covers the Rock, and Disproves Spock.
+            Lizard: Poisons Spock, and Eats Paper.
+            Spock: Smashes Scissors, and Vaporizes Rock.
+            <!--explaine the rules of RPSLS here-->
+        </footer>
 
     </body>
     <script src="assets/js/script.js"></script>
