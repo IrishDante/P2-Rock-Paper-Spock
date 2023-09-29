@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function playGame(playerChoice){
   
-  let opponentChoice = gameChoices[Math.floor(Math.random()*5)];
+  let opponentChoice = gameChoices[Math.floor(Math.random()*5)].name();
+  console.log(opponentChoice);
 
   if (playerChoice == opponentChoice){
     document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
