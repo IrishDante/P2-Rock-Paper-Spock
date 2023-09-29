@@ -30,16 +30,18 @@ function playGame(playerChoice){
     document.getElementById("roundResult").innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
   }else if (playerWins(playerChoice, opponentChoice)){
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you win!`;
+    document.getElementByID("player-score").innerHTML++;
   }else{
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}, and your opponent choose ${opponentChoice} as such you lose!`;
+    document.getElementByID("opponent-score").innerHTML++;
   }
 }
 
 function playerWins(playerChoice, opponentChoice){
   let choiceMatchUps = gameChoices.find(({ name }) => name === playerChoice);
-  console.log(choiceMatchUps);
+  //console.log(choiceMatchUps);
   let wins = choiceMatchUps.beats;
-  console.log(wins);
+  //console.log(wins);
   for(let win of wins){
     if(opponentChoice == win){
       return true;
