@@ -6,7 +6,7 @@ const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 //add event listener to all buttons
 for (let button of buttons){
   button.addEventListener("click", function(){
-    let playerChoice = this.getAttribute("data-type");
+    let playerChoice = this.getAttribute("data-choice");
     document.getElementById("roundResult").innerHTML = `You choose ${playerChoice}`;
     playGame(playerChoice);
   })
