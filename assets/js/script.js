@@ -3,8 +3,8 @@ let buttons = document.getElementsByClassName("control");
 let playerScore = document.getElementById("player-score");
 let opponentScore = document.getElementById("opponent-score");
 const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"]}, {name:"Paper", beats:["Rock","Spock"]}, 
-                     {name:"Scissors", beats:["Paper","Lizard"]}, {name:"Lizard", beats:["Spock","Paper"]}, 
-                     {name:"Spock", beats:["Scissors","Rock"]};
+                     {name:"Scissors", beats:["Paper","Lizard"]}, {name:"Lizard", beats:["Spock","Paper"]},
+                     {name:"Spock", beats:["Scissors","Rock"]}];
 
 //check that dom has loaded source https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 function playGame(playerChoice){
   
-  let opponentChoice = gameChoices[Math.floor(Math.random()*5)].name();
+  let opponentChoiceObject = gameChoices[Math.floor(Math.random()*5)].name();
   console.log(opponentChoice);
 
   if (playerChoice == opponentChoice){
