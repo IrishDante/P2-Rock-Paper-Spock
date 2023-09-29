@@ -8,9 +8,9 @@ const gameChoices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 for (let button of buttons){
   button.addEventListener("click", function(){
     let playerChoice = this.getAttribute("data-choice");
-    console.log(playerChoice + " has been clicked");
     //playGame(playerChoice);
   })
+  console.log("button event listener added);
 }
 
 function playGame(playerChoice){
