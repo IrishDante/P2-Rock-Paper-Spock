@@ -48,8 +48,10 @@ function playGame(playerChoice){
 function updateImages(playerChoice, opponentChoice){
   let playerIcon = gameChoices.find(({name})=> name === playerChoice);
   playerImage.src = playerIcon.image;
+  playerImage.alt = playerChoice;
   let opponentIcon = gameChoices.find(({name})=> name === opponentChoice);
   opponentImage.src = opponentIcon.image;
+  opponentImage.alt = opponentChoice;
 }
 function playerWins(playerChoice, opponentChoice){
   let choiceMatchUps = gameChoices.find(({ name }) => name === playerChoice);
