@@ -3,9 +3,11 @@ let buttons = document.getElementsByClassName("control");
 let playerScore = document.getElementById("player-score");
 let opponentScore = document.getElementById("opponent-score");
 let roundResult = document.getElementById("round-result");
-const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"]}, {name:"Paper", beats:["Rock","Spock"]}, 
-                     {name:"Scissors", beats:["Paper","Lizard"]}, {name:"Lizard", beats:["Spock","Paper"]},
-                     {name:"Spock", beats:["Scissors","Rock"]}];
+let playerImage = document.getElementById("player-image");
+let opponentImage = document.getElementById("opponent-image");
+const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"], image:assets/images/spock-icon-4.jpg}, {name:"Paper", beats:["Rock","Spock"],image:assets/images/spock-icon-3.jpg}, 
+                     {name:"Scissors", beats:["Paper","Lizard"],image:assets/images/spock-icon-5.jpg}, {name:"Lizard", beats:["Spock","Paper"],image:assets/images/spock-icon-2.jpg},
+                     {name:"Spock", beats:["Scissors","Rock"], image:assets/images/rock-paper-scissors-icon-6.jpg}];
 let playerWinCount = 0;
 let opponentWinCount = 0;
 
@@ -31,6 +33,7 @@ function playGame(playerChoice){
   let opponentChoice = gameChoices[Math.floor(Math.random()*5)].name;
   console.log(opponentChoice);
 
+  updateImages(playerChoice, opponentChoice);
   if (playerChoice == opponentChoice){
     roundResult.innerHTML = `You and your opponent both choose ${playerChoice}, as such this round is a draw.`;
   }else if (playerWins(playerChoice, opponentChoice)){
@@ -42,6 +45,12 @@ function playGame(playerChoice){
   }
 }
 
+function updateImages(playerChoice, opponentChoice){
+  let playerIcon = gameChoices.find(({name})=> name === playerChoice);
+  playerImage.src = playerIcon.image;
+  let opponentIcon = gameChoices.find(({name})=> name === opponentChoice);
+  opponentImage.src = opponentIcon.image;
+}
 function playerWins(playerChoice, opponentChoice){
   let choiceMatchUps = gameChoices.find(({ name }) => name === playerChoice);
   //console.log(choiceMatchUps);
