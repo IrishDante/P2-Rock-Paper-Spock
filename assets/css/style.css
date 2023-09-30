@@ -50,13 +50,15 @@ footer{
 .player{
   background-color:lightblue;
   float:left;
-  width:45%;
+  width: 45%;
+  height: 45%;
 }
 
 .opponent{
   background-color:lightcoral;
   float:right;
-  width:45%;
+  width: 45%;
+  height: 45%;
 }
 
 #player-image{
