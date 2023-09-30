@@ -1,39 +1,20 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Rock Paper Scissors Lizard Spock is a varient of Rock Paper Scissors invented by Sam Kass and Karen Bryla, the game recieved a large amount of attention when featured in an episode of the sitcom "The Big Bang Theory". This site allows players to play games of Rock Paper Scissors Lizard Spock with a computer opponent.
 
-Welcome,
+![image](https://github.com/IrishDante/P2-Rock-Paper-Spock/assets/46965975/b82721ac-82a8-49a7-8f99-e3a1e5e1a512)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+The site features a clean and clear design. Text is intentionally high contrast with a clear font to ensure that everyone can enjoy it.
+The site also features a footer which explains the game rules and also credits the original creators.
 
-## Codeanywhere Reminders
+Gameplay
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The player can select any of the 5 clearly labled buttons in order to play the game, they recieve fast feedback both writen and visial as to their choice as well as their opponent.
+The opponent is automated, selecting a random result each round.
 
-`python3 -m http.server`
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Site preview image provided by: https://www.page2images.com/
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+Images provided by Icon Library: https://icon-library.com/
 
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+Game Chart provided by Big Bang Theory Wiki: https://bigbangtheory.fandom.com/wiki/Main_Page
