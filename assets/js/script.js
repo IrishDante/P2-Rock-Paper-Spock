@@ -5,9 +5,9 @@ let opponentScore = document.getElementById("opponent-score");
 let roundResult = document.getElementById("round-result");
 let playerImage = document.getElementById("player-image");
 let opponentImage = document.getElementById("opponent-image");
-const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"], image:assets/images/spock-icon-4.jpg}, {name:"Paper", beats:["Rock","Spock"],image:assets/images/spock-icon-3.jpg}, 
-                     {name:"Scissors", beats:["Paper","Lizard"],image:assets/images/spock-icon-5.jpg}, {name:"Lizard", beats:["Spock","Paper"],image:assets/images/spock-icon-2.jpg},
-                     {name:"Spock", beats:["Scissors","Rock"], image:assets/images/rock-paper-scissors-icon-6.jpg}];
+const gameChoices = [{name:"Rock", beats: ["Scissors","Lizard"], image:"assets/images/rock.jpg"}, {name:"Paper", beats:["Rock","Spock"],image:"assets/images/paper.jpg"}, 
+                     {name:"Scissors", beats:["Paper","Lizard"],image:"assets/images/scissors.jpg"}, {name:"Lizard", beats:["Spock","Paper"],image:"assets/images/lizard.jpg"},
+                     {name:"Spock", beats:["Scissors","Rock"], image:"assets/images/spock.jpg"}];
 let playerWinCount = 0;
 let opponentWinCount = 0;
 
