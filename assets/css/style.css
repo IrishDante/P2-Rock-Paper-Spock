@@ -9,7 +9,6 @@ html{
 body{
   box-sizing:inherit;
   font-family:'Roboto',sans-serif;
-  margin:0;
 }
 
 header{
@@ -23,7 +22,7 @@ footer{
   left:0;
   bottom:0;
   box-sizing:inherit;
-  height:25%;
+  height:15%;
   text-align:center;
 }
 
